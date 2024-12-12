@@ -105,7 +105,7 @@
     height: 100%;
 }
 .box1 {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -188,4 +188,17 @@
     transform: scale(1.09);
     background-color: rgb(120, 169, 240);
     color: white;
+}
+
+footer{
+    padding: 3px 7px ;
+    background-color: rgba(0, 0, 0, 0.86);
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;  
+}
+footer img{
+    height: 25px;
+    padding: 5px;
 }
