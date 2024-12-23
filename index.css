@@ -220,12 +220,12 @@ footer img{
     }
     .navbar ul li a{
         padding: 10px 15px;
-        font-size: 0.5rem;
+        font-size: 0.7rem;
         margin: 7px 0px;
     }
     .item img {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
         margin: 0px;
     }
     .item h2 {
@@ -257,8 +257,25 @@ footer img{
         grid-gap: 0px;
         justify-content: center;
     }
-    
+
     .container{
         grid-template-columns: none;
+    }
+    .hidden{
+        display: none;
+    }
+    .navbar ul li .dropdown ul li a {
+        font-size: 0.67rem;
+        padding: 10px 24px;
+    }
+    .navbar ul li .dropdown {
+        min-width: 100px;
+    }
+    footer img {
+        height: 18px;
+        padding: 0px;
+    }
+    footer p{
+        font-size: 0.7rem;
     }
   }
