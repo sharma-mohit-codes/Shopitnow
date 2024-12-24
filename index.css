@@ -98,12 +98,13 @@
     background-color: rgb(120, 169, 240);
 }
 
-.left{
+.left {
     display: flex;
     flex-direction: column;
     background-color: rgb(36 36 36);
     height: 100%;
 }
+
 .box1 {
     /* position: fixed; */
     display: flex;
@@ -112,7 +113,7 @@
     color: white;
     margin: 10px;
     border-radius: 20px;
-    
+
 }
 
 .box1 h3 {
@@ -120,12 +121,14 @@
     /* text-align: center; */
     padding: 20px 0px;
 }
-.box1 span{
+
+.box1 span {
     font-size: 1.04rem;
-    margin: 20px 0px ;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
+
 .list {
     font-size: 1.26rem;
     display: flex;
@@ -135,7 +138,7 @@
 
 #box2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 10px;
     background-color: rgb(120, 169, 240);
 }
@@ -149,7 +152,8 @@
     padding: 15px;
     border-radius: 20px;
 }
-.item:hover{
+
+.item:hover {
     transform: scale(1.02);
 }
 
@@ -164,17 +168,18 @@
     font-family: "Chakra Petch", sans-serif;
     font-style: normal;
     padding: 10px;
-    cursor:default;
+    cursor: default;
     text-align: center;
 }
-.item p{
+
+.item p {
     font-size: 1.7rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     margin: 15px 0px;
 }
 
-.item button{
+.item button {
     font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding: 5px 20px;
@@ -184,58 +189,93 @@
     color: rgb(4, 101, 246);
     border: 2px solid blue;
 }
-.item button:hover{
+
+.item button:hover {
     transform: scale(1.09);
     background-color: rgb(120, 169, 240);
     color: white;
 }
 
-footer{
-    padding: 3px 7px ;
+footer {
+    padding: 3px 7px;
     background-color: rgba(0, 0, 0, 0.86);
     color: white;
     display: flex;
-    justify-content:space-between;
-    align-items: center;  
+    justify-content: space-between;
+    align-items: center;
 }
-footer img{
+
+footer img {
     height: 25px;
     padding: 5px;
 }
 
 /* Styles for tablets (iPad in portrait/landscape mode) */
-/* @media (max-width: 768px) {
-    body {
-      font-size: 14px;
+@media (max-width: 1024px) {
+    .navbar {
+        padding-left: 20px;
     }
-  } */
-  
-  /* Styles for mobile phones */
-  @media (max-width: 480px) {
-    .left{
+
+    .hidden {
         display: none;
     }
-    .navbar{
+
+    .navbar ul li a {
+        padding: 5px 30px;
+        font-size: 1.5rem;
+    }
+
+    .navbar ul li .dropdown ul li a {
+        font-size: 1.26rem;
+        padding: 14px 30px;
+    }
+
+    .navbar ul li .dropdown {
+        min-width: 185px;
+    }
+
+    footer img {
+        height: 30px;
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Styles for mobile phones */
+@media (max-width: 480px) {
+    .left {
+        display: none;
+    }
+
+    .navbar {
         padding-left: 0px;
     }
-    .navbar ul li a{
+
+    .navbar ul li a {
         padding: 10px 15px;
         font-size: 0.7rem;
         margin: 7px 0px;
     }
+
     .item img {
         height: 180px;
         width: 180px;
         margin: 0px;
     }
+
     .item h2 {
         font-size: 1.0rem;
         padding: 5px;
     }
+
     .item p {
         font-size: 1.0rem;
         margin: 0px 0px;
     }
+
     .item button {
         font-size: 0.7rem;
         padding: 6px 20px;
@@ -243,12 +283,12 @@ footer img{
     }
 
     .item {
-    background-color: white;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+        background-color: white;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
     }
 
     #box2 {
@@ -258,24 +298,29 @@ footer img{
         justify-content: center;
     }
 
-    .container{
+    .container {
         grid-template-columns: none;
     }
-    .hidden{
+
+    .hidden {
         display: none;
     }
+
     .navbar ul li .dropdown ul li a {
         font-size: 0.67rem;
         padding: 10px 24px;
     }
+
     .navbar ul li .dropdown {
         min-width: 100px;
     }
+
     footer img {
         height: 18px;
         padding: 0px;
     }
-    footer p{
+
+    footer p {
         font-size: 0.7rem;
     }
-  }
+}
