@@ -212,6 +212,9 @@ footer img {
 
 /* Styles for tablets (iPad in portrait/landscape mode) */
 @media (max-width: 1024px) {
+    .left {
+        display: none;
+    }
     .navbar {
         padding-left: 20px;
     }
@@ -241,6 +244,9 @@ footer img {
 
     footer p {
         font-size: 0.8rem;
+    }
+    .container {
+        grid-template-columns: none;
     }
 }
 
